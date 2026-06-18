@@ -1,0 +1,284 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>AquaFlow Dashboard</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
+</head>
+<body>
+
+<div class="dashboard-container">
+
+    <aside class="sidebar">
+        <div class="logo-section">
+            <i class="fas fa-droplet logo-icon"></i>
+            <div class="logo-text">
+                <h2>AquaFlow</h2>
+                <span>Water Supply System</span>
+            </div>
+        </div>
+
+        <nav class="navigation-menu">
+            <ul>
+                <li class="active"><i class="fas fa-table-columns"></i> Dashboard</li>
+                <li><i class="fas fa-water"></i> Water Sources</li>
+                <li><i class="fas fa-industry"></i> Treatment Plants</li>
+                <li><i class="fas fa-database"></i> Reservoirs</li>
+                <li><i class="fas fa-network-wired"></i> Pipeline</li>
+                <li><i class="fas fa-location-dot"></i> Zones</li>
+                <li><i class="fas fa-users"></i> Consumer</li>
+                <li><i class="fas fa-file-lines"></i> Reports</li>
+                <li><i class="fas fa-bell"></i> Alerts</li>
+                <li><i class="fas fa-gear"></i> Settings</li>
+            </ul>
+        </nav>
+
+        <div class="promo-box">
+            <div class="promo-bg-illustration"></div>
+            <div class="promo-content">
+                <h4>Every drop counts.</h4>
+                <p>Let's build a better future together.</p>
+            </div>
+        </div>
+
+        <div class="admin-profile-card">
+            <div class="profile-info">
+                <div class="profile-avatar-wrapper">
+                    <i class="fas fa-user"></i>
+                </div>
+                <div class="profile-title">
+                    <strong>ADMIN</strong>
+                    <small>System Administrator</small>
+                </div>
+            </div>
+            <i class="fas fa-chevron-down dropdown-arrow"></i>
+        </div>
+    </aside>
+
+    <main class="main-content-area">
+        <header class="top-dashboard-header">
+            <div class="header-title-block">
+                <h1>Dashboard</h1>
+                <p>Overview of the water supply system</p>
+            </div>
+
+            <div class="header-actions-block">
+                <div class="weather-widget">
+                    <i class="fas fa-cloud-showers-heavy rain-icon"></i>
+                    <div class="weather-details">
+                        <span class="temp">24°C</span>
+                        <span class="desc">Light Rain</span>
+                    </div>
+                </div>
+
+                <div class="action-notification-icon">
+                    <i class="fas fa-bell"></i>
+                    <span class="notification-indicator"></span>
+                </div>
+
+                <div class="calendar-dropdown-selector">
+                    <span class="date-display-string">June 06, 2026</span>
+                    <i class="far fa-calendar"></i>
+                </div>
+            </div>
+        </header>
+
+        <section class="metrics-grid">
+            <div class="metric-card">
+                <div class="metric-icon-container produced-blue">
+                    <i class="fas fa-droplet"></i>
+                </div>
+                <div class="metric-values">
+                    <span class="metric-label">Total Water Produced</span>
+                    <h2>124.8 <span class="unit-text">ML</span></h2>
+                    <span class="trend-indicator up"><i class="fas fa-arrow-up"></i> 8.5% <small>from yesterday</small></span>
+                </div>
+            </div>
+
+            <div class="metric-card">
+                <div class="metric-icon-container stored-green">
+                    <i class="fas fa-water"></i>
+                </div>
+                <div class="metric-values">
+                    <span class="metric-label">Total Water Stored</span>
+                    <h2>342.6 <span class="unit-text">ML</span></h2>
+                    <span class="trend-indicator up"><i class="fas fa-arrow-up"></i> 5.3% <small>from yesterday</small></span>
+                </div>
+            </div>
+
+            <div class="metric-card">
+                <div class="metric-icon-container consumer-purple">
+                    <i class="fas fa-users"></i>
+                </div>
+                <div class="metric-values">
+                    <span class="metric-label">Total Consumer</span>
+                    <h2>28,543</h2>
+                    <span class="trend-indicator up"><i class="fas fa-arrow-up"></i> 2.1% <small>from yesterday</small></span>
+                </div>
+            </div>
+
+            <div class="metric-card alert-active-border">
+                <div class="metric-icon-container alert-orange">
+                    <i class="fas fa-triangle-exclamation"></i>
+                </div>
+                <div class="metric-values">
+                    <span class="metric-label">Active Alerts</span>
+                    <h2 class="alert-count-text">3</h2>
+                    <a href="#" class="alert-action-link">View all alerts</a>
+                </div>
+            </div>
+        </section>
+
+        <section class="visualization-grid">
+            <div class="visualization-card panel-card">
+                <h3>System Overview</h3>
+                <div class="map-view-mock-wrapper">
+                    <img src="c:\Users\Acer Aspire 3\Pictures\Screenshots\Screenshot 2026-06-14 125233.png" alt="System Overview Map" class="embedded-visual-asset">
+                </div>
+            </div>
+
+            <div class="visualization-card panel-card">
+                <div class="visualization-header-flex">
+                    <h3>Water Production</h3>
+                    <div class="timeframe-selector-dropdown">
+                        <span>This Week</span>
+                        <i class="fas fa-chevron-down"></i>
+                    </div>
+                </div>
+                <div class="chart-headline-metric">
+                    <h2>124.8 <span class="chart-unit">ML</span></h2>
+                </div>
+                <div class="graph-view-mock-wrapper">
+                    <img src="c:\Users\Acer Aspire 3\Pictures\Screenshots\Screenshot 2026-06-14 125256.png" alt="Water Production Graph" class="embedded-visual-asset">
+                </div>
+            </div>
+        </section>
+
+        <section class="details-and-status-grid">
+            <div class="panel-card log-panel">
+                <div class="panel-section-header">
+                    <h3>Recent Alerts</h3>
+                    <a href="#" class="global-panel-view-all">View all</a>
+                </div>
+
+                <div class="status-row-item alert-item-box">
+                    <div class="status-icon-indicator warning-amber">
+                        <i class="fas fa-triangle-exclamation"></i>
+                    </div>
+                    <div class="status-item-description">
+                        <h4>High Pressure in North Zone</h4>
+                        <p>North Zone Main Pipeline</p>
+                    </div>
+                    <span class="status-timestamp">Today, 8:45 AM</span>
+                </div>
+
+                <div class="status-row-item alert-item-box">
+                    <div class="status-icon-indicator warning-amber">
+                        <i class="fas fa-triangle-exclamation"></i>
+                    </div>
+                    <div class="status-item-description">
+                        <h4>Low Water Level</h4>
+                        <p>East Reservoir</p>
+                    </div>
+                    <span class="status-timestamp">Today, 7:15 AM</span>
+                </div>
+
+                <div class="status-row-item alert-item-box">
+                    <div class="status-icon-indicator warning-amber">
+                        <i class="fas fa-triangle-exclamation"></i>
+                    </div>
+                    <div class="status-item-description">
+                        <h4>Pump Maintenance Due</h4>
+                        <p>West Pump Station</p>
+                    </div>
+                    <span class="status-timestamp">Yesterday, 11:30 PM</span>
+                </div>
+            </div>
+
+            <div class="panel-card rankings-panel">
+                <div class="panel-section-header">
+                    <h3>Top Consumer</h3>
+                    <a href="#" class="global-panel-view-all">View all</a>
+                </div>
+
+                <div class="ranking-metric-entry">
+                    <div class="ranking-row-labels">
+                        <span class="ranking-name">Central City District</span>
+                        <span class="ranking-value">12.4 ML</span>
+                    </div>
+                    <div class="ranking-progress-bar-track">
+                        <div class="ranking-progress-fill width-88"></div>
+                    </div>
+                </div>
+
+                <div class="ranking-metric-entry">
+                    <div class="ranking-row-labels">
+                        <span class="ranking-name">Green Valley Township</span>
+                        <span class="ranking-value">8.7 ML</span>
+                    </div>
+                    <div class="ranking-progress-bar-track">
+                        <div class="ranking-progress-fill width-62"></div>
+                    </div>
+                </div>
+
+                <div class="ranking-metric-entry">
+                    <div class="ranking-row-labels">
+                        <span class="ranking-name">North Heights Area</span>
+                        <span class="ranking-value">5.9 ML</span>
+                    </div>
+                    <div class="ranking-progress-bar-track">
+                        <div class="ranking-progress-fill width-45"></div>
+                    </div>
+                </div>
+
+                <div class="ranking-metric-entry">
+                    <div class="ranking-row-labels">
+                        <span class="ranking-name">East Park Community</span>
+                        <span class="ranking-value">3.8 ML</span>
+                    </div>
+                    <div class="ranking-progress-bar-track">
+                        <div class="ranking-progress-fill width-28"></div>
+                    </div>
+                </div>
+            </div>
+
+            <div class="panel-card gauge-radial-panel">
+                <h3>Storage Overview</h3>
+                <div class="radial-gauge-container-flex">
+                    <div class="radial-progress-ring-component">
+                        <svg class="radial-svg-element" viewBox="0 0 100 100">
+                            <circle class="radial-track-bg" cx="50" cy="50" r="40"></circle>
+                            <circle class="radial-fill-bar" cx="50" cy="50" r="40"></circle>
+                        </svg>
+                        <div class="radial-percentage-display">
+                            <span>68%</span>
+                        </div>
+                    </div>
+                    <div class="gauge-numerical-readout">
+                        <h2>342.6 <span class="gauge-max-limit">/ 500 ML</span></h2>
+                        <p>Total Capacity</p>
+                    </div>
+                </div>
+                <a href="#" class="gauge-footer-link-action">View all reservoirs</a>
+            </div>
+
+            <div class="panel-card system-integrity-panel">
+                <h3>System Health</h3>
+                <div class="integrity-status-display-box">
+                    <div class="integrity-pulse-icon-outer animate-pulse-glow">
+                        <i class="fas fa-droplet"></i>
+                    </div>
+                    <h4>All Systems Operational</h4>
+                    <p>System performance is normal</p>
+                    <small class="integrity-sync-timestamp">Last checked: Today, 9:00 AM</small>
+                </div>
+            </div>
+        </section>
+    </main>
+
+</div>
+
+</body>
+</html>
